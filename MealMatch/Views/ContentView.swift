@@ -16,20 +16,15 @@ struct ContentView: View {
     @State var password: String = ""
     
     
-    
     var body: some View {
         ZStack {
             
-            Image("mealmatch")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
             
             
             VStack {
                 
                 Spacer()
-                Spacer()
+                
                 
                 TextField("Username", text: $email)
                     .padding()
@@ -45,12 +40,10 @@ struct ContentView: View {
                     .padding(.horizontal, 40)
                     .padding(.bottom, 20)
                 
-                Spacer()
                 
-                
-                
-                
+                               
             }
+            .padding(.bottom, 100)
         }
     }
 }

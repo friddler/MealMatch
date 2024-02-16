@@ -20,6 +20,8 @@
 		0E00F33D2B7F835C006269C5 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 0E00F33C2B7F835C006269C5 /* FirebasePerformance */; };
 		0E00F33F2B7F835C006269C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E00F33E2B7F835C006269C5 /* FirebaseStorage */; };
 		0E00F3412B7F85C4006269C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E00F3402B7F85C4006269C5 /* GoogleService-Info.plist */; };
+		0E00F3482B7F90D9006269C5 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00F3472B7F90D9006269C5 /* AuthViewModel.swift */; };
+		0E00F34A2B7F90ED006269C5 /* FirestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00F3492B7F90ED006269C5 /* FirestoreViewModel.swift */; };
 		0EDEF65E2B7F753C006557B9 /* MealMatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEF65D2B7F753C006557B9 /* MealMatchApp.swift */; };
 		0EDEF6602B7F753C006557B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEF65F2B7F753C006557B9 /* ContentView.swift */; };
 		0EDEF6622B7F753E006557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDEF6612B7F753E006557B9 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		0E00F3402B7F85C4006269C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E00F3472B7F90D9006269C5 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		0E00F3492B7F90ED006269C5 /* FirestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreViewModel.swift; sourceTree = "<group>"; };
 		0EDEF65A2B7F753C006557B9 /* MealMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEF65D2B7F753C006557B9 /* MealMatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMatchApp.swift; sourceTree = "<group>"; };
 		0EDEF65F2B7F753C006557B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E00F3422B7F9060006269C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EDEF65F2B7F753C006557B9 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E00F3432B7F9088006269C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0E00F3472B7F90D9006269C5 /* AuthViewModel.swift */,
+				0E00F3492B7F90ED006269C5 /* FirestoreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0E00F3442B7F9091006269C5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0E00F3452B7F909B006269C5 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+		0E00F3462B7F90AA006269C5 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 		0EDEF6512B7F753C006557B9 = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +162,13 @@
 		0EDEF65C2B7F753C006557B9 /* MealMatch */ = {
 			isa = PBXGroup;
 			children = (
+				0E00F3462B7F90AA006269C5 /* DataModels */,
+				0E00F3452B7F909B006269C5 /* LottieFiles */,
+				0E00F3442B7F9091006269C5 /* Managers */,
+				0E00F3432B7F9088006269C5 /* ViewModels */,
+				0E00F3422B7F9060006269C5 /* Views */,
 				0E00F3402B7F85C4006269C5 /* GoogleService-Info.plist */,
 				0EDEF65D2B7F753C006557B9 /* MealMatchApp.swift */,
-				0EDEF65F2B7F753C006557B9 /* ContentView.swift */,
 				0EDEF6612B7F753E006557B9 /* Assets.xcassets */,
 				0EDEF6632B7F753E006557B9 /* Preview Content */,
 			);
@@ -304,6 +350,8 @@
 			files = (
 				0EDEF6602B7F753C006557B9 /* ContentView.swift in Sources */,
 				0EDEF65E2B7F753C006557B9 /* MealMatchApp.swift in Sources */,
+				0E00F34A2B7F90ED006269C5 /* FirestoreViewModel.swift in Sources */,
+				0E00F3482B7F90D9006269C5 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
