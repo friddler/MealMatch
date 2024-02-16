@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+   
     
     @State var email: String = ""
     @State var password: String = ""
+    
     
     
     var body: some View {
@@ -47,12 +51,10 @@ struct ContentView: View {
                 
                 
             }
-            
-            
-           
         }
     }
 }
+
 
 #Preview {
     ContentView()
