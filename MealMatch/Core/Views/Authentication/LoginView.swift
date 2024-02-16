@@ -1,30 +1,25 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  MealMatch
 //
 //  Created by Frida Nilsson on 2024-02-16.
 //
 
 import SwiftUI
+import FirebaseAuth
 
-
-struct ContentView: View {
+struct LoginView: View {
     
-   
     
     @State var email: String = ""
     @State var password: String = ""
     
-    
     var body: some View {
         ZStack {
-            
-            
             
             VStack {
                 
                 Spacer()
-                
                 
                 TextField("Username", text: $email)
                     .padding()
@@ -40,7 +35,6 @@ struct ContentView: View {
                     .padding(.horizontal, 40)
                     .padding(.bottom, 20)
                 
-                
                                
             }
             .padding(.bottom, 100)
@@ -48,7 +42,6 @@ struct ContentView: View {
     }
 }
 
-
 #Preview {
-    ContentView()
+    LoginView()
 }
