@@ -15,29 +15,70 @@ struct LoginView: View {
     @State var password: String = ""
     
     var body: some View {
-        ZStack {
+        NavigationStack {
             
-            VStack {
+            ZStack {
                 
-                Spacer()
                 
-                TextField("Username", text: $email)
-                    .padding()
-                    .background(Color(.systemGray6))
+                //image
+                VStack {
+                    
+                    
+                    VStack (spacing: 15){
+                        
+                        //form fields
+                        InputView(text: $email, title: "Email Address", placeholder: "name@example.com")
+                            .autocapitalization(.none)
+                            .padding(.horizontal)
+                            .frame(height: 60)
+                            .background(Color(.systemGray6))
+                            .cornerRadius(10)
+                            .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
+                        
+                        InputView(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                            .padding(.horizontal)
+                            .frame(height: 60)
+                            .background(Color(.systemGray6))
+                            .cornerRadius(10)
+                            .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
+                        
+                    }
+                    .padding(.horizontal, 30)
+                    
+                    
+                    //sign in button
+                    Button {
+                        print("log user in")
+                    } label: {
+                        HStack {
+                            Text("SIGN IN")
+                                .fontWeight(.semibold)
+                            Image(systemName: "arrow.right")
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: UIScreen.main.bounds.width - 60, height: 48)
+                        
+                    }
+                    .background(Color(.systemBlue))
                     .cornerRadius(10)
-                    .padding(.horizontal, 40)
-                    .padding(.bottom, 10)
-                
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 40)
-                    .padding(.bottom, 20)
-                
-                               
+                    .padding(.top, 20)
+                    
+                    
+                    //sign up
+                    
+                    NavigationLink {
+                        
+                    } label: {
+                        HStack{
+                            Text("Don't have an account?")
+                            Text("Sign up")
+                                .fontWeight(.bold)
+                        }
+                        
+                    }.font(.system(size: 14))
+                        .padding(.top, 10)
+                }
             }
-            .padding(.bottom, 100)
         }
     }
 }
