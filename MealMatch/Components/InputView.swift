@@ -26,12 +26,10 @@ struct InputView: View {
             if isSecureField {
                 SecureField(placeholder, text: $text)
                     .font(.system(size: 15))
-                    .background(Color(.systemGray6))
                 
             } else {
                 TextField(placeholder, text: $text)
                     .font(.system(size: 15))
-                    .background(Color(.systemGray6))
                 
             }
             
