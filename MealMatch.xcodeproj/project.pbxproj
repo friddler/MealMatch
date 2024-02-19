@@ -26,6 +26,7 @@
 		0E00F3562B7FAD32006269C5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0E00F3552B7FAD32006269C5 /* Lottie */; };
 		0E00F35A2B7FADEF006269C5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00F3592B7FADEF006269C5 /* InputView.swift */; };
 		0E00F35C2B7FBD30006269C5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00F35B2B7FBD30006269C5 /* RegistrationView.swift */; };
+		0E00F35E2B80C665006269C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00F35D2B80C665006269C5 /* ProfileView.swift */; };
 		0EDEF65E2B7F753C006557B9 /* MealMatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEF65D2B7F753C006557B9 /* MealMatchApp.swift */; };
 		0EDEF6602B7F753C006557B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEF65F2B7F753C006557B9 /* ContentView.swift */; };
 		0EDEF6622B7F753E006557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDEF6612B7F753E006557B9 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		0E00F34B2B7F9475006269C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0E00F3592B7FADEF006269C5 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		0E00F35B2B7FBD30006269C5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0E00F35D2B80C665006269C5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0EDEF65A2B7F753C006557B9 /* MealMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEF65D2B7F753C006557B9 /* MealMatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMatchApp.swift; sourceTree = "<group>"; };
 		0EDEF65F2B7F753C006557B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		0E00F3532B7F96AC006269C5 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0E00F35D2B80C665006269C5 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E00F35E2B80C665006269C5 /* ProfileView.swift in Sources */,
 				0EDEF6602B7F753C006557B9 /* ContentView.swift in Sources */,
 				0EDEF65E2B7F753C006557B9 /* MealMatchApp.swift in Sources */,
 				0E00F34A2B7F90ED006269C5 /* FirestoreViewModel.swift in Sources */,
