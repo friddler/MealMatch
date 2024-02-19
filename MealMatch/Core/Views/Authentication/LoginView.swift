@@ -26,7 +26,7 @@ struct LoginView: View {
                     VStack (spacing: 15){
                         
                         //form fields
-                        InputView(text: $email, title: "Email Address", placeholder: "name@example.com")
+                        InputView(text: $email, title: "Email adress", placeholder: "name@example.com")
                             .autocapitalization(.none)
                             .padding(.horizontal)
                             .padding(.bottom, 5)
